@@ -58,7 +58,7 @@ function attemptSecretNumber() {
   //console.log(guessArr.indexOf(number));
   //console.log(secretNumber.indexOf(number));  
   
-  if ((secretNumber.includes(number)) && (guessArr[index] === secretNumber[index])){
+  if (guessArr[index] === secretNumber[index]){
     howManyAreRight++;
     console.log(`Number ${number} is right and in the right position 🟢`);
   }else if(secretNumber.includes(number)){
