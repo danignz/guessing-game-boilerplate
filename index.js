@@ -44,6 +44,7 @@ function attemptSecretNumber() {
 
   /* Your code goes here */
 
+  //LOGIC WITHOUT REPETITIONS
   // if ((secretNumber.includes(number)) && (guessArr.indexOf(number) === secretNumber.indexOf(number))){
   //   howManyAreRight++;
   //   console.log(`Number ${number} is right and in the right position 🟢`);
@@ -57,14 +58,11 @@ function attemptSecretNumber() {
   //console.log(guessArr.indexOf(number));
   //console.log(secretNumber.indexOf(number));  
   
-  if ((secretNumber.includes(number)) && (guessArr.indexOf(number) === secretNumber.indexOf(number)) && (secretNumber.indexOf(number) === index )){
+  if ((secretNumber.includes(number)) && (guessArr[index] === secretNumber[index])){
     howManyAreRight++;
     console.log(`Number ${number} is right and in the right position 🟢`);
   }else if(secretNumber.includes(number)){
     console.log(`Number ${number} is right but in the wrong position 🟠`);
-    //console.log(index);
-    //console.log(guessArr.indexOf(number));
-    //console.log(secretNumber.indexOf(number)); 
   }else{
     console.log(`Number ${number} is not one of the secret numbers 🔴`);
   }
